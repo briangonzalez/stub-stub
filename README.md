@@ -1,5 +1,4 @@
-
-![stub](stub.svg)
+![stub](https://cdn.rawgit.com/briangonzalez/stub-stub/master/stub.svg)
 
 
 stub-stub
