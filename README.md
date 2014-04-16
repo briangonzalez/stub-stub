@@ -58,14 +58,14 @@ Any **GET** to a given resource extends the `default.yml` for the given type. Yo
 
 Inheritance
 ===========
-Take for instance `./cars/1.yml` with the following:
+Take for instance `./stubs/cars/1.yml` with the following:
 
 ```yaml
 name: Prius
 price: $20,000
 ````
 
-as well as `./cars/default.yml` with the following:
+as well as `./stubs/cars/default.yml` with the following:
 
 ```yaml
 name: Base Car
@@ -73,7 +73,7 @@ price: $10,000
 mpg: 40
 ````
 
-A GET request to `/cars/1` would return (which is the merging of `default.yml` and `1.yml`):
+A GET request to `/cars/1` would return the merging of `default.yml` and `1.yml`:
 
 ```json
 {
