@@ -9,7 +9,7 @@ stub-stub is a quick and dirty solution to getting your API stubbed out quickly.
 
 Getting started
 ===============
-Create a `stubs` directory inside of your project root. Here's an example structure:
+Create a `stubs` directory inside of your project root. Here's an example directory structure:
 
 ````
 stubs/
@@ -27,17 +27,17 @@ stubs/
     └── default.yml
 ````
 
-With the given stubs directory, stub-stub would create multiple endpoints available to you. Some exmaples include:
+With the given stubs directory, stub-stub would create multiple endpoints available to you. Some examples include:
 
-| Endpoint                | Returns                            |
-| ------------------------|:----------------------------------:|
-| GET `/`                 | list all known resources           |
-| GET `/cars`             | json blob for all cars             |
-| GET `/cars/1`           | json blob for car with id 1        |
-| GET `/cars/3-xyz`       | json blob for car with id xyz      |
-| GET `/users`            | json blob for all cars             |
-| GET `/users/2`          | json blob for user with id 2       |
-| POST `/auth/do`         | default json blob for auth         |
+| Verb  | Endpoint            | Returns                            |
+| ----  | --------------------|:----------------------------------:|
+| GET   | `/`                 | list all known resources           |
+| GET   | `/cars`             | json blob for all cars             |
+| GET   | `/cars/1`           | json blob for car with id 1        |
+| GET   | `/cars/3-xyz`       | json blob for car with id xyz      |
+| GET   | `/users`            | json blob for all cars             |
+| GET   | `/users/2`          | json blob for user with id 2       |
+| POST  | `/auth/do`          | default json blob for auth         |
 
 stub-stub works by creating endpoints for each YAML file nested within a given type. So for instance, a file at `./stubs/cars/1.yml` would have a GET endpoint at `/cars/1`.
 
@@ -51,7 +51,7 @@ Take for instance `./cars/1.yml` with the following:
 ```yaml
 name: Prius
 price: $20,000
-```
+````
 
 as well as `./cars/default.yml` with the following:
 
@@ -59,13 +59,13 @@ as well as `./cars/default.yml` with the following:
 name: Base Car
 price: $10,000
 mpg: 40
-```
+````
 
 A GET request to `/cars/1` would return (which is the merging of `default.yml` and `1.yml`):
 
 ```json
 {
- "name":  "My Car",
+ "name":  "Prius",
  "price": "$20,000",
  "mpg":   40
 }
