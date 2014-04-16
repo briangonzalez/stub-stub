@@ -1,0 +1,29 @@
+{
+  "name": "stub-stub",
+  "version": "0.1.0",
+  "description": "Quick and dirty API stubbing mechanism based on YAML files inside a sensible directory structure.",
+  "repository": "http://github.com/briangonzalez/stub-stub",
+  "main": "index.js",
+  "bin": {
+    "stub-stub": "./bin/cli.js"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "yamljs": "~0.1.4",
+    "lodash": "~2.4.1",
+    "chalk": "~0.4.0",
+    "liftoff": "~0.9.8"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-mocha": "~0.4.1",
+    "supertest": "~0.11.0",
+    "foreman": "~0.3.0"
+  },
+  "scripts": {
+    "test":   "gulp test",
+    "start":  "nf start"
+  },
+  "author": "Brian Gonzalez",
+  "license": "MIT"
+}
