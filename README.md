@@ -6,6 +6,19 @@ stub-stub
 stub-stub is a quick and dirty solution to getting your API stubbed out quickly. You can stub out your whole API by simply placing YAML files inside a sensible directory structure.
 
 
+Installation (does not work quite yet)
+======================================
+
+Globally:
+````
+npm install stub-stub -g
+````
+
+Locally:
+````
+npm install stub-stub --save-dev
+````
+
 Getting started
 ===============
 Create a `stubs` directory inside of your project root. Here's an example directory structure:
@@ -29,11 +42,11 @@ stubs/
 With the given stubs directory, stub-stub would create multiple endpoints available to you. Some examples include:
 
 | Verb  | Endpoint            | Returns                            |
-| ----  | --------------------|:----------------------------------:|
+| ----  | --------------------|------------------------------------|
 | GET   | `/`                 | list all known resources           |
 | GET   | `/cars`             | json blob for all cars             |
 | GET   | `/cars/1`           | json blob for car with id 1        |
-| GET   | `/cars/3-xyz`       | json blob for car with id xyz      |
+| GET   | `/cars/xyz`         | json blob for car with id xyz      |
 | GET   | `/users`            | json blob for all cars             |
 | GET   | `/users/2`          | json blob for user with id 2       |
 | POST  | `/auth/do`          | default json blob for auth         |
