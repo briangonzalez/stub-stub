@@ -68,7 +68,7 @@ price: $20,000
 as well as `./stubs/cars/default.yml` with the following:
 
 ```yaml
-name: Base Car
+name: Default Car
 price: $10,000
 mpg: 40
 ````
