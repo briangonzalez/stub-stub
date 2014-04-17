@@ -47,7 +47,7 @@ With the given stubs directory, stub-stub would create multiple endpoints availa
 | GET   | `/cars`             | json blob for all cars             |
 | GET   | `/cars/1`           | json blob for car with id 1        |
 | GET   | `/cars/xyz`         | json blob for car with id xyz      |
-| GET   | `/users`            | json blob for all cars             |
+| GET   | `/users`            | json blob for all users            |
 | GET   | `/users/2`          | json blob for user with id 2       |
 | POST  | `/auth/do`          | default json blob for auth         |
 
