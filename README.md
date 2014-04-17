@@ -6,8 +6,8 @@ stub-stub
 stub-stub is a quick and dirty solution to getting your API stubbed out quickly. You can stub out your whole API by simply placing YAML files inside a sensible directory structure.
 
 
-Installation (does not work quite yet)
-======================================
+Installation
+============
 
 Globally:
 ````
