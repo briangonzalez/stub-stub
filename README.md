@@ -86,10 +86,10 @@ A GET request to `/cars/1` would return the merging of `default.yml` and `1.yml`
 
 Starting stub-stub
 ==================
-stub-stub by default starts on port **4343**. Why 4343? no idea, it just felt right at the time.
+stub-stub by default starts on port **4343**. Why 4343? No idea, it just felt right at the time.
 
 ````
-stub-stub 
+stub-stub
 ````
 
 You can optionally run stub-stub on another port and/or from another directory.
