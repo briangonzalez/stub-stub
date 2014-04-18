@@ -21,7 +21,7 @@ npm install stub-stub --save-dev
 
 Getting started
 ===============
-Create a `stubs` directory inside of your project root. Here's an example directory structure:
+Create an `api-stubs` directory inside of your project root. Here's an example directory structure:
 
 ````
 stubs/
@@ -51,21 +51,21 @@ With the given stubs directory, stub-stub would create multiple endpoints availa
 | GET   | `/users/2`          | json blob for user with id 2       |
 | POST  | `/auth/do`          | default json blob for auth         |
 
-stub-stub works by creating endpoints for each YAML file nested within a given type. So for instance, a file at `./stubs/cars/1.yml` would have a GET endpoint at `/cars/1`.
+stub-stub works by creating endpoints for each YAML file nested within a given type. So for instance, a file at `./api-stubs/cars/1.yml` would have a GET endpoint at `/cars/1`.
 
 Any **GET** to a given resource extends the `default.yml` for the given type. You can also **POST** to any endpoint and receive the corresponding json blob.
 
 
 Inheritance
 ===========
-Take for instance `./stubs/cars/1.yml` with the following:
+Take for instance `./api-stubs/cars/1.yml` with the following:
 
 ```yaml
 name: Prius
 price: $20,000
 ````
 
-as well as `./stubs/cars/default.yml` with the following:
+as well as `./api-stubs/cars/default.yml` with the following:
 
 ```yaml
 name: Default Car
