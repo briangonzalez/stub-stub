@@ -24,7 +24,7 @@ Getting started
 Create an `api-stubs` directory inside of your project root. Here's an example directory structure:
 
 ````
-stubs/
+api-stubs/
 ├── auth
 │   └── default.yml
 ├── cars
