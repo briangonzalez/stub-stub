@@ -97,6 +97,9 @@ You can optionally run stub-stub on another port and/or from another directory.
 stub-stub --port=8000 --stubs=foo
 ````
 
+--------------
+
+![npm](https://nodei.co/npm/stub-stub.png)
 
 
 
