@@ -3,6 +3,9 @@
 
 stub-stub
 ---------
+
+![npm](https://nodei.co/npm/stub-stub.png)
+
 stub-stub is a quick and dirty solution to getting your API stubbed out quickly. You can stub out your whole API by simply placing YAML files inside a sensible directory structure.
 
 
