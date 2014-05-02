@@ -16,7 +16,7 @@ describe('GET /cars', function(){
       .expect(200)
       .end(function(err, res){
         if (err) throw err;
-        assert.equal("Mercedes", res.body.name);
+        assert.equal("Mercedes", res.body.car.name);
         done();
       });
   });
@@ -29,8 +29,8 @@ describe('GET /cars', function(){
       .expect(200)
       .end(function(err, res){
         if (err) throw err;
-        assert.equal("My Car", res.body.name);
-        assert.equal("$10,000", res.body.price);
+        assert.equal("My Car", res.body.car.name);
+        assert.equal("$10,000", res.body.car.price);
         done();
       });
   });
@@ -47,8 +47,8 @@ describe('POST /auth', function(){
       .expect(200)
       .end(function(err, res){
         if (err) throw err;
-        assert.equal("ABCDEFG", res.body.token);
-        assert.equal(true, res.body.success);
+        assert.equal("ABCDEFG", res.body.auth.token);
+        assert.equal(true, res.body.auth.success);
         done();
       });
   });

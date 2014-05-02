@@ -2,12 +2,12 @@
 
 
 stub-stub
---------
+--------=
 stub-stub is a quick and dirty solution to getting your API stubbed out quickly. You can stub out your whole API by simply placing YAML files inside a sensible directory structure.
 
 
 Installation
-============
+------------
 
 Globally:
 ````
@@ -20,7 +20,7 @@ npm install stub-stub --save-dev
 ````
 
 Getting started
-===============
+---------------
 Create an `api-stubs` directory inside of your project root. Here's an example directory structure:
 
 ````
@@ -57,7 +57,7 @@ Any **GET** to a given resource extends the `default.yml` for the given type. Yo
 
 
 Inheritance
-===========
+-----------
 Take for instance `./api-stubs/cars/1.yml` with the following:
 
 ```yaml
@@ -77,15 +77,17 @@ A GET request to `/cars/1` would return the merging of `default.yml` and `1.yml`
 
 ```json
 {
- "name":  "Prius",
- "price": "$20,000",
- "mpg":   40
+  "car": {
+   "name":  "Prius",
+   "price": "$20,000",
+   "mpg":   40
+  }
 }
 ````
 
 
 Starting stub-stub
-==================
+------------------
 stub-stub by default starts on port **4343**. Why 4343? No idea, it just felt right at the time.
 
 ````
@@ -101,7 +103,30 @@ stub-stub --port=8000 --stubs=foo
 
 ![npm](https://nodei.co/npm/stub-stub.png)
 
+Inflection
+----------
+Resources are by default pluralized/singularized depending on context using the [inflect node module](http://msnexploder.github.io/inflect/). So, for instance, a GET to `/cars` will return:
 
+```json
+{
+  "cars": [
+    { "id": "1", "name": "Dodge"}
+    { "id": "2", "name": "Buick" }
+  ]
+}
+```
+
+and a GET to `/cars/1` would return:
+
+```json
+{
+  "car":
+    {
+    "id": "1",
+    "name": "Dodge"
+  }
+}
+```
 
 
 *Ticket by Ryan Dell from The Noun Project*
