@@ -2,7 +2,7 @@
 
 
 stub-stub
---------=
+---------
 stub-stub is a quick and dirty solution to getting your API stubbed out quickly. You can stub out your whole API by simply placing YAML files inside a sensible directory structure.
 
 
@@ -98,10 +98,6 @@ You can optionally run stub-stub on another port and/or from another directory.
 ````
 stub-stub --port=8000 --stubs=foo
 ````
-
---------------
-
-![npm](https://nodei.co/npm/stub-stub.png)
 
 Inflection
 ----------
