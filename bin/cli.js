@@ -12,16 +12,12 @@ cli.on('requireFail', function (name, err) {
 });
 
 cli.launch(function(env){
+  var constants = stubstub.constants;
 
-  var CONSTANTS = stubstub.constants({
-    port:       env.argv.port,
-    stubsPath:  env.argv.stubs
-  });
-
-  stubstub.server.listen(CONSTANTS.port, function(a, b) {
+  stubstub.server.listen(constants.port, function(a, b) {
     console.log(
-      chalk.blue(   '[stub-stub] listening on port:', CONSTANTS.port),
-      chalk.yellow( '\n[stub-stub] serving stubs from directory:', CONSTANTS.stubsPath)
+      chalk.blue(   '[stub-stub] listening on port:', constants.port),
+      chalk.yellow( '\n[stub-stub] serving stubs from directory:', constants.stubsPath)
     );
   });
 

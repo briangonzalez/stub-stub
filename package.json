@@ -1,6 +1,6 @@
 {
   "name": "stub-stub",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Quick and dirty API stubbing mechanism based on YAML files inside a sensible directory structure.",
   "repository": "https://github.com/briangonzalez/stub-stub",
   "author": {
@@ -25,7 +25,8 @@
     "gulp-mocha": "~0.4.1",
     "supertest": "~0.11.0",
     "foreman": "~0.3.0",
-    "gulp-shell": "~0.2.4"
+    "gulp-shell": "~0.2.4",
+    "minimist": "0.0.8"
   },
   "scripts": {
     "test": "gulp test",
