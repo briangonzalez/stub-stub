@@ -12,6 +12,6 @@ gulp.task('watch', function() {
   gulp.watch('./**/*.js', ['test']);
 });
 
-gulp.task('publish-module', shell.task([
+gulp.task('publish-stub-stub', shell.task([
   'npm publish ./'
 ]));
