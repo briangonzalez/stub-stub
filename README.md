@@ -127,5 +127,13 @@ and a GET to `/cars/1` would return:
 }
 ```
 
+Contributing
+------------
+
+Fire up a development copy of stub-stub by issuing the following from the command line:
+
+````
+$ ./bin/cli.js
+````
 
 *Ticket by Ryan Dell from The Noun Project*
