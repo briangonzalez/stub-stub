@@ -35,6 +35,19 @@ describe('GET /cars', function(){
       });
   });
 
+  it('should have allow for non numerical file names and honor custom IDs', function(done){
+    request(server)
+      .get('/users/current')
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .expect(200)
+      .end(function(err, res){
+        if (err) throw err;
+        assert.equal("3", res.body.user.id);
+        done();
+      });
+  });
+
 });
 
 describe('POST /auth', function(){
