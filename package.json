@@ -1,6 +1,6 @@
 {
   "name": "stub-stub",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Quick and dirty API stubbing mechanism based on YAML files inside a sensible directory structure.",
   "repository": "https://github.com/briangonzalez/stub-stub",
   "author": {
